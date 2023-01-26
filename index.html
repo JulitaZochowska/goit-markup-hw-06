@@ -461,16 +461,108 @@
             </li>
           </ul>
         </div>
+        <div class="third-part-of-footer">
+          <form>
+            <div class="news-part1">
+              <div class="email-input-container">
+                <label for="footer-email-input-id" class="label-footer"
+                  >zapisz się do newslettera</label
+                >
+                <input
+                  id="footer-email-input-id"
+                  type="email"
+                  name="email"
+                  class="newsletter-input"
+                  placeholder="E-mail"
+                />
+              </div>
+              <button type="submit" class="button-footer">
+                Zapisz się
+                <svg class="footer-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-strzalka"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="modal-container is-hidden" data-modal>
       <div class="modal-window">
         <div class="modal-header">
           <button data-modal-close class="modal-close-button">
-            <svg width="30" height="30">
-              <use href="./images/close-icon.svg#close-icon"></use>
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#close-icon"></use>
             </svg>
           </button>
+        </div>
+        <div class="modal-window-items">
+          <p class="fill-window-modal">
+            Zostaw swoje dane w formularzu ponizej
+          </p>
+          <form>
+            <label class="label-1" for="username-input-id">Imie</label>
+            <div class="input-field-container">
+              <input
+                type="text"
+                name="username"
+                id="username-input-id"
+                class="modal-window-input"
+              />
+              <svg class="icons-modal-window" width="18" height="18">
+                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+              </svg>
+            </div>
+            <label class="label-1" for="tel-input-id">Telefon</label>
+            <div class="input-field-container">
+              <input
+                type="text"
+                name="tel"
+                id="tel-input-id"
+                class="modal-window-input"
+              />
+              <svg class="icons-modal-window" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+            </div>
+            <label class="label-1" for="email-input-id">Email</label>
+            <div class="input-field-container">
+              <input
+                type="text"
+                name="email"
+                id="email-input-id"
+                class="modal-window-input"
+              />
+              <svg class="icons-modal-window" width="18" height="18">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+            </div>
+            <label class="label-1" for="textarea-textarea-id">Komentarz</label>
+            <textarea
+              id="textarea-textarea-id"
+              name="feedback"
+              class="textarea"
+              placeholder="Wprowadź tekst"
+            ></textarea>
+            <div class="input-field-container-2">
+              <input
+                id="checkbox-input"
+                type="checkbox"
+                name="checkbox"
+                class="checkbox-window-modal"
+                checked
+              />
+              <label for="checkbox-input" class="label-checkbox"
+                >Oświadczam iź akceptuje
+                <a class="blue-part" href="regulamin">Regulamin</a>
+                i
+                <a class="blue-part" href="politykaprywatnosci"
+                  >Politykę Prywatności.</a
+                ></label
+              >
+            </div>
+            <button type="submit" class="button-modal-window">Wyślij</button>
+          </form>
         </div>
       </div>
     </div>
